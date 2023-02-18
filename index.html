@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Notes | Alpha Coder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: "Ubuntu";
+            font-weight: bold;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://images.unsplash.com/photo-1670272499188-79fe22656f64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
+            background-repeat: no-repeat;
+            background-color: rgb(170, 170, 247);
+            color: rgb(9, 8, 8);
+            text-align: center;
+        }
+        
+        .left {
+            /* border: 2px solid grey;*/
+            display: inline-block;
+            left: 60px;
+            top: 20px;
+            position: absolute;
+            font-size: 20px;
+        }
+        
+        .left img {
+            width: 120px;
+            height: 120px;
+            filter: invert(80%) brightness(100%) saturate(200%);
+            border-radius: 12px;
+            position: relative;
+            background-repeat: no-repeat;
+        }
+        
+        .left div {
+            text-align: center;
+        }
+        
+        #lefttext {
+            color: rgb(232, 222, 222);
+        }
+        
+        #lefttext:hover {
+            color: rgb(2, 159, 107);
+        }
+        
+        .mid {
+            display: inline-block;
+            width: 36%;
+            margin: 29px auto;
+            /*border: 2px solid rgb(89, 222, 173);*/
+        }
+        
+        .right {
+            /*  <!-- border: 2px solid red; */
+            right: 34px;
+            top: 43px;
+            position: absolute;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h1::first-letter {
+            font-size: 120px;
+            color: rgb(0, 0, 0);
+        }
+        
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Ubuntu';
+        }
+        
+        .navbar {
+            background-color: black;
+            color: white;
+            border-radius: 2px solid white;
+            font-size: 28px;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 0px 12px;
+            top: 10%;
+        }
+        
+        .navbar li a {
+            text-decoration: none;
+            padding: 3px 3px;
+            color: rgb(232, 222, 222);
+        }
+        
+        .navbar li a:hover {
+            background-color: rgba(8, 8, 11, 0.326);
+            text-decoration: underline;
+            color: rgba(164, 164, 157, 0.832);
+        }
+        
+        .search {
+            float: right;
+            color: black;
+            padding: 12px 75px;
+        }
+        
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+        
+        .btn {
+            font-family: 'Ubuntu';
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 18px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: rgb(43, 39, 39);
+        }
+        
+        .alt {
+            background-repeat: no-repeat;
+        }
+        
+        .search {
+            margin: 86px 0px;
+        }
+        
+        .container {
+            border: 3px solid rgb(22, 9, 59);
+            background-color: rgb(255, 184, 184);
+            border-radius: 28px;
+            margin: 10px 10px;
+            padding: 75px;
+            width: 33%;
+            top: 90%;
+            justify-content: flex-end;
+        }
+        
+        .form-group input {
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            width: 450px;
+            margin: 20px 1px;
+            border: 2px solid rgb(1, 9, 54);
+            padding: 6px 1px;
+            border-radius: 8px;
+            font-family: Ubuntu;
+        }
+        
+        .container h1 {
+            text-align: center;
+        }
+        
+        .container button {
+            display: block;
+            width: 56%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-flow: row nowrap;
+        }
+        
+        .contain {
+            width: 90%;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+        }
+        
+        .box {
+            display: flex;
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7LoyrbJPy9-V5YHCnwDRHtRnmrJ5BDKW8-QqPtpjymYpMgBsa2wQRO8mGBpIl8NLZqg&usqp=CAU');
+            background-repeat: no-repeat;
+            filter: opacity(80%) invert(89%) saturate(200%);
+            background-size: 400px 400px;
+            background-color: burlywood;
+            border: 4px solid rgb(4, 29, 99);
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            color: rgb(112, 192, 218);
+            height: 400px;
+            width: 400px;
+            font-size: 30px;
+            transform: rotate(45deg);
+            transition: all 1s ease-in;
+        }
+        
+        .alt {
+            width: 400px;
+            height: 400px;
+        }
+        
+        .box:hover {
+            /* transform: rotate(360deg);*/
+            color: rgb(244, 150, 103);
+            border: 4px solid black transparent;
+            background-color: rgb(4, 91, 49);
+            transform: scale(3);
+            transform: translateX(123px);
+            transform: translateY(500px)
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- ul>li*4>a -->
+        <div class="left">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7LoyrbJPy9-V5YHCnwDRHtRnmrJ5BDKW8-QqPtpjymYpMgBsa2wQRO8mGBpIl8NLZqg&usqp=CAU" alt="image loading" class="alt"><br><br>
+            <div id="lefttext">Professional &nbsp Courses</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li color="red"><a href="">Home</a></li>
+                <li><a href="services.html">Notes</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+        </div>
+        <div class="search">
+            <input type="text" name="search" id="search" placeholder="What is Python ?">
+
+        </div>
+        </ul>
+        <div class="right">
+
+
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button></div>
+        </div>
+    </header>
+    <div class="contain">
+        <div class="box"></div>
+
+        <div class="container">
+
+
+
+            <h1>Get the best Notes of your field</h1><br>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" placeholder="€nter your Name">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="€nter your Age">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="€nter your Contact No.">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="€nter your Locality">
+
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+
+
+</body>
+
+</html>
